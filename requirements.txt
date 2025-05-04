@@ -1,0 +1,4 @@
+TTS
+PyQt5
+pydub
+soundfile

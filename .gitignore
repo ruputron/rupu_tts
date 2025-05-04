@@ -1,0 +1,38 @@
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+*.env
+
+# Audio output files (generated)
+*.wav
+*.mp3
+*.flac
+
+# Build outputs (from PyInstaller or similar tools)
+dist/
+build/
+*.spec
+
+# Temporary or backup files
+*.log
+*.tmp
+*.bak
+
+# Jupyter (if ever used)
+.ipynb_checkpoints/
+
+# System/OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor configs
+.vscode/
+.idea/
