@@ -1,33 +1,27 @@
 @echo off
 setlocal
 
-:: Optional: Path to the Python installer
-set PYTHON_INSTALLER=python-3.11.8-amd64.exe
+echo Checking Python version...
+python -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')" > pyver.txt
+set /p PYVER=<pyver.txt
+del pyver.txt
 
-:: Check if Python is installed
-where python >nul 2>nul
-if %errorlevel% neq 0 (
-    echo Python not found. Installing Python...
-    if exist "%PYTHON_INSTALLER%" (
-        "%PYTHON_INSTALLER%" /quiet InstallAllUsers=1 PrependPath=1 Include_test=0
-    ) else (
-        echo Python installer not found. Please place %PYTHON_INSTALLER% in this folder.
-        pause
-        exit /b
-    )
+if "%PYVER%" NEQ "3.10" if "%PYVER%" NEQ "3.11" (
+    echo WARNING: Python is either not installed or "%PYVER%" is not officially supported.
+    echo Please install Python 3.10 or 3.11 for best compatibility.
+    pause
 )
 
-:: Upgrade pip
-python -m ensurepip --upgrade
-python -m pip install --upgrade pip
-
-:: Install dependencies
 echo Installing required Python packages...
-python -m pip install TTS
+pip install -r requirements.txt
+if errorlevel 1 (
+    echo.
+    echo ERROR: Failed to install some dependencies.
+    echo Please check the messages above and make sure your Python version is supported.
+    pause
+    exit /b 1
+)
 
-:: Done
 echo.
 echo All dependencies installed successfully.
-echo Press any key to continue...
-pause >nul
-endlocal
+pause
