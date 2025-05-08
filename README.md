@@ -38,7 +38,7 @@ Or manually install via pip:
 pip install -r requirements.txt
 ```
 
-> ⚠️ Python 3.10 or later is recommended.
+> ⚠️ Python 3.10 or 3.11 required for Rupu TTS 1.0.
 
 ---
 
@@ -111,14 +111,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## 🙏 Credits
 
 - TTS engine powered by [Coqui TTS](https://github.com/coqui-ai/TTS)
-- GUI and packaging by **Rupu**
-# Rupu TTS
-
-**Rupu TTS** is a lightweight, portable, and open-source text-to-speech (TTS) desktop application. Built with Python and Coqui TTS, it provides a user-friendly interface for generating high-quality speech from text — entirely offline.
-
-...
-
-## 🙏 Credits
-
-- Text-to-Speech powered by [Coqui TTS](https://github.com/coqui-ai/TTS)
 - GUI and packaging by **Rupu**
