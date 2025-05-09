@@ -7,7 +7,7 @@
 
 ## Prerequisites
 
-- **Python 3.10 must be installed.
+- **Python 3.10 must be installed.**
 - During installation, ensure the **Add Python to PATH** option is checked.
 - Verify by running in a Command Prompt:
   ```bash
