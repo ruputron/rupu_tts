@@ -13,7 +13,7 @@
   ```bash
   python --version
   ```
-  It should output `Python 3.10.x` or `Python 3.11.x`.
+  It should output `Python 3.10.x`.
 
 ---
 
@@ -29,7 +29,7 @@
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+### 1. Clone the Repository or download from the releasses page
 
 ```bash
 git clone https://github.com/yourusername/rupu_tts.git
