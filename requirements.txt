@@ -1,4 +1,4 @@
-pyinstaller
+pip install TTS --no-build-isolation
 TTS
 pydub
 soundfile
@@ -8,4 +8,4 @@ torch
 unidecode
 librosa
 scipy
-PyQt5; sys_platform == "win32"
+PyQt5
