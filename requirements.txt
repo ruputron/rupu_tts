@@ -1,4 +1,11 @@
+pyinstaller
 TTS
-PyQt5
 pydub
 soundfile
+numpy
+torchaudio
+torch
+unidecode
+librosa
+scipy
+PyQt5; sys_platform == "win32"
