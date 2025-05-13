@@ -13,7 +13,7 @@
   ```bash
   python --version
   ```
-  It should output `Python 3.10.x` or `Python 3.11.x`.
+  It should output `Python 3.10.x`.
 
 ---
 
