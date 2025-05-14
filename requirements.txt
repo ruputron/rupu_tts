@@ -1,0 +1,24 @@
+# TTS and model backend
+TTS==0.16.1
+torch
+torchaudio
+numpy==1.22.0
+scipy
+unidecode
+librosa
+soundfile
+pydub
+mecab-python3
+unidic-lite
+
+# GUI
+PyQt5==5.15.6
+
+# Packaging
+pyinstaller
+
+# Build system helpers
+wheel
+setuptools
+toml
+build
