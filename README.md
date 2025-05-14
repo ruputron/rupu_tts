@@ -33,12 +33,12 @@
 
 ## 📥 Installation
 
-### 1. Clone the Repository with git or download a release
+1. Clone the Repository with git or download a release
 
 ```bash
 git clone https://github.com/yourusername/rupu_tts.git
 cd rupu_tts
-
+```
 2. Install Dependencies
 
 Run the setup script (Windows only):
