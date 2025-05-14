@@ -64,7 +64,7 @@ build_rupu_tts.bat
 
     No Python installation required on target machine
 
-📁 Project Structure
+## 📁 Project Structure
 File / Folder	Description
 rupu_tts.py	Main Python GUI application
 install_dependencies.bat	Windows script to install dependencies
