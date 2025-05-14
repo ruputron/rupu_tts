@@ -78,34 +78,6 @@ def run_tts():
         print("[EXCEPTION] Error running TTS:", e)
         messagebox.showerror("Execution Error", f"An error occurred:\n{e}")
 
-def threaded_install_model():
-    install_button.config(state="disabled")
-    thread = threading.Thread(target=install_default_model)
-    thread.start()
-
-def install_default_model():
-    with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as tmp:
-        try:
-            result = subprocess.run(
-                ["tts", "--text", "Test download", "--model_name", DEFAULT_VOICE, "--out_path", tmp.name],
-                capture_output=True,
-                text=True,
-                startupinfo=startupinfo
-            )
-            if result.returncode != 0:
-                print("[ERROR] Default voice download failed.")
-                messagebox.showerror("Download Error", "Failed to download the default model.")
-            else:
-                messagebox.showinfo("Success", "Default voice downloaded successfully.")
-        except Exception as e:
-            messagebox.showerror("Exception", str(e))
-        finally:
-            try:
-                os.remove(tmp.name)
-            except:
-                pass
-    install_button.config(state="normal")
-
 def set_output_format(fmt):
     global current_format
     current_format = fmt
@@ -133,7 +105,7 @@ def apply_theme():
     window.config(bg=get("bg"))
     for widget in [text_input, filename_entry]:
         widget.config(bg=get("entry"), fg=get("fg"), insertbackground=get("fg"), highlightbackground=get("border"))
-    for btn in [generate_button, install_button, theme_button]:
+    for btn in [generate_button, theme_button]:
         btn.config(bg=get("button"), fg=get("fg"), activebackground=get("active"))
     for label in [label_input, label_filename, label_format]:
         label.config(bg=get("bg"), fg=get("fg"))
@@ -189,9 +161,6 @@ for fmt in OUTPUT_FORMATS:
 # --- Action Buttons ---
 generate_button = tk.Button(window, text="Generate Speech", command=run_tts, font=("Arial", 12), height=2)
 generate_button.pack(pady=(5, 5), padx=10, fill="x")
-
-install_button = tk.Button(window, text="Download Default Voice", command=threaded_install_model, font=("Arial", 10))
-install_button.pack(pady=(0, 6), padx=10, fill="x")
 
 theme_button = tk.Button(window, text="Toggle Light/Dark Mode", command=toggle_theme, font=("Arial", 10))
 theme_button.pack(pady=(0, 10), padx=10, fill="x")

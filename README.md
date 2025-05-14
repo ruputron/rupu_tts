@@ -4,6 +4,12 @@
 
 ---
 
+## 🛠 Designed to be built on
+
+- Easily buld your own version from source
+- Potential for many improvements
+- Easier introduction to open-source for beginners
+
 ## 🔧 Features
 
 - 🗣️ Built on Coqui TTS (fully open-source, offline engine)
@@ -94,3 +100,5 @@ Rupu TTS is released under the MIT License.
     Core engine: Coqui TTS
 
     GUI design and packaging by [Rupu]
+	
+	Thanks for showing an ineterest!
