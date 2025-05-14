@@ -101,3 +101,5 @@ Rupu TTS is released under the MIT License.
     Core engine: Coqui TTS
 
     GUI design and packaging by [Rupu]
+
+    Thanks for showing an interest!
