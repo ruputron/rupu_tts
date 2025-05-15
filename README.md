@@ -27,9 +27,8 @@
 - **Windows 10 or 11**
 - **Python 3.10**
 - Ensure you check **“Add Python to PATH”** when installing Python
-- Optional: [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/)  
-  (some dependencies may require it on clean systems)
-
+- Microsoft C++ Build Tools
+  
 ---
 
 ## 📥 Installation
