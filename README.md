@@ -9,7 +9,7 @@
 - Easily buld your own version from source
 - Potential for many improvements
 - Easier introduction to open-source for beginners
-- Possible future implementations include a voice trainer modula and visual impairment support
+- Possible future implementations include a voice trainer module and visual impairment support
 
 ## 🔧 Features
 
