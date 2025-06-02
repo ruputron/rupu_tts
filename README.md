@@ -92,7 +92,8 @@ To contribute:
 
 If you’d like to support the development of Rupu TTS:
 
-👉 https://ko-fi.com/rupsiedaisy
+Just donate some money to charity instead of me.
+
 📜 License
 
 Rupu TTS is released under the MIT License.
